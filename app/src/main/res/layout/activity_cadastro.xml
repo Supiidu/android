@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cadastro">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="308dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="64dp"
+        android:fontFamily="@font/archivo_black"
+        android:lineSpacingExtra="8sp"
+        android:text="Boas vindas ao Global Bank e à uma vida financeira mais inteligente!"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="184dp"
+        android:layout_marginBottom="568dp"
+        android:fontFamily="@font/belanosima"
+        android:lineSpacingExtra="8sp"
+        android:text="Nome de quem vai usar a conta"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="332dp"
+        android:layout_height="36dp"
+        android:background="#D6D6D6"
+        android:hint="Digite seu nome completo"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="171dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="184dp"
+        android:layout_marginBottom="568dp"
+        android:fontFamily="@font/belanosima"
+        android:lineSpacingExtra="8sp"
+        android:text="Data de Nascimento"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="233dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="332dp"
+        android:layout_height="36dp"
+        android:background="#D6D6D6"
+        android:hint="DD/MM/AAAA"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="258dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continuar"
+        tools:layout_editor_absoluteX="184dp"
+        tools:layout_editor_absoluteY="632dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
