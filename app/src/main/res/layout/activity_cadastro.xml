@@ -5,13 +5,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#B40707"
     tools:context=".Cadastro">
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="308dp"
         android:layout_height="48dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="64dp"
         android:fontFamily="@font/archivo_black"
         android:lineSpacingExtra="8sp"
@@ -19,12 +20,13 @@
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/imageView2" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
         android:layout_marginEnd="184dp"
         android:layout_marginBottom="568dp"
         android:fontFamily="@font/belanosima"
@@ -32,42 +34,70 @@
         android:text="Nome de quem vai usar a conta"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText"
         android:layout_width="332dp"
-        android:layout_height="36dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="32dp"
         android:background="#D6D6D6"
         android:hint="Digite seu nome completo"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="171dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="184dp"
-        android:layout_marginBottom="568dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="250dp"
         android:fontFamily="@font/belanosima"
         android:lineSpacingExtra="8sp"
         android:text="Data de Nascimento"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="233dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputEditText" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:layout_width="332dp"
-        android:layout_height="36dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="32dp"
         android:background="#D6D6D6"
         android:hint="DD/MM/AAAA"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="258dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <Button
         android:id="@+id/button5"
+        android:layout_width="326dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="92dp"
+        android:backgroundTint="#d6d6d6"
+        android:text="Continuar"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Continuar"
-        tools:layout_editor_absoluteX="184dp"
-        tools:layout_editor_absoluteY="632dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
